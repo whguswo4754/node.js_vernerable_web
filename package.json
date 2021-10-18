@@ -19,6 +19,6 @@
     "morgan": "~1.9.0",
     "msfrpc-client-node": "^0.2.2",
     "nodemon": "^1.19.4",
-    "xss": "^1.0.8"
+    "xss": "^1.0.10"
   }
 }
