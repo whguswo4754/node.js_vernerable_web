@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "live": "nodemon ./bin/www",
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -14,11 +16,13 @@
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "mongodb": "^3.6.6",
-    "mongoose": "^5.12.5",
-    "monk": "^6.0.5",
-    "morgan": "~1.9.0",
+    "mongoose": "^5.13.15",
+    "monk": "^7.0.0",
+    "morgan": "~1.9.1",
     "msfrpc-client-node": "^0.2.2",
-    "nodemon": "^1.19.4",
-    "xss": "^1.0.8"
-  }
+    "nodemon": "^2.0.17",
+    "xss": "^1.0.10",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
